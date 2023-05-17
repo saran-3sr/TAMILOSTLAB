@@ -18,3 +18,4 @@ for X in cursor:
     print(X)
 
 print(mydb)
+mydb.close()
