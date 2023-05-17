@@ -1,0 +1,7 @@
+x=input("Enter number 1: ")
+y=input("Enter number 2: ")
+print("Datatype of number 1 is: ",type(x))
+print("Datatype of number 2 is: ",type(y))
+res=str(eval(x)+eval(y))
+print("The addition of two numbers is: ",res)
+print("Datatype of result is: ",type(res))

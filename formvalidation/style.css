@@ -1,0 +1,30 @@
+
+.form
+{
+    width:100vw;
+    height: 100vh;
+    margin: auto;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.inputgrp{
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0;
+    width: 40vw;
+}
+.inputgrp label{
+    font-size: 24px;
+    margin: 4px;
+}
+.inputgrp input
+{
+    padding: 5%;
+    font-size: 14px;
+}
+.btn{
+    padding: 5%;
+    font-size: 14px;
+}
