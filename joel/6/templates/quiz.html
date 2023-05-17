@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Quiz</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-200 py-10">
+  <div class="max-w-md mx-auto bg-white p-6 rounded-md shadow-md">
+    <h1 class="text-2xl font-semibold mb-6">Simple Quiz</h1>
+    <form action="{{ url_for('quiz_submit') }}" method="POST">
+      <div class="mb-4">
+        <label for="question1" class="text-lg font-medium">Question 1: What is the capital of France?</label>
+        <input type="text" id="question1" name="question1" class="border border-gray-300 rounded-md p-2 w-full">
+      </div>
+      <div class="mb-4">
+        <label for="question2" class="text-lg font-medium">Question 2: Who painted the Mona Lisa?</label>
+        <input type="text" id="question2" name="question2" class="border border-gray-300 rounded-md p-2 w-full">
+      </div>
+      <div class="flex justify-center">
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
