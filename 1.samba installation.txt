@@ -1,0 +1,16 @@
+1.samba installation
+	$Su
+	password:
+	#yum install samba
+2. check samba status
+#service Smb status
+	smdb is stooped. start samba servuce
+#service smb start
+	starting smb services
+	restart samba services
+#service smb restart
+
+3.Disable firewall
+	#service Ip table status
+	4.Enforce remisive state
+	5.Login to samba using samba to add the files and folders to share with windows
