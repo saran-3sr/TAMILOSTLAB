@@ -7,7 +7,6 @@ def permutFunc(myList):
 	for i in range(len(myList)):
 		m = myList[i]
 		res = myList[:i] + myList[i+1:]
-		# print("x: ",res)
 		for p in permutFunc(res):
 			k.append([m] + p)
 	return k
