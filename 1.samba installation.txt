@@ -14,3 +14,22 @@
 	#service Ip table status
 	4.Enforce remisive state
 	5.Login to samba using samba to add the files and folders to share with windows
+
+
+sudo apt install samba
+
+mk file name
+sudo nano /etc/samba/smb.config
+
+[sambashare]
+	commend="hello"
+	path=
+	read only=No
+	browsable=yes
+
+sudo ufw allow samba
+sudo service smbd restart
+
+sudo smbpasswd -a username
+
+\\ipaddress
