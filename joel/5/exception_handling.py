@@ -1,9 +1,14 @@
-class NotEligibleToVoteException(Exception):
+class NotEligibleException(Exception):
     pass
 
-age = int(input("Enter your age: "))
+try:
+    age=int(input("Enter your Age "))
+    if age<18:
+        raise NotEligibleException
+    else:
+        print("You can Vote")
 
-if age < 18:
-    raise NotEligibleToVoteException("You must be at least 18 years old to vote.")
-else:
-    print("You are eligible to vote.")
+except NotEligibleException:
+    print("Not eligible")
+except:
+    print("Invalid Input")
